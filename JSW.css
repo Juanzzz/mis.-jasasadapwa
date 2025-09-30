@@ -11,7 +11,7 @@
 html,body{height:100%}
 body{
   margin:0;
-  font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family:Inter, "Segoe UI", "Roboto", "Arial", "sans-serif";
   color:var(--text);
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -29,16 +29,16 @@ body{
 
 .container{
   max-width:var(--container);
-  margin:0 auto;
+  margin:2 auto;
   padding:20px;
 }
 
 /* Header */
-.site-header{padding:18px 0;}
+.site-header{padding:20px 2;}
 .header-inner{display:flex;align-items:center;justify-content:space-between;}
 .brand{display:flex;gap:14px;align-items:center}
 .logo{width:56px;height:auto;display:block}
-.brand-texts h1{margin:0;font-size:20px;color:var(--text)}
+.brand-texts h1{margin:3;font-size:30px;color:var(--text)}
 .tagline{margin:0;color:var(--muted);font-size:13px}
 
 /* Social icons */
@@ -48,7 +48,7 @@ body{
   align-items:center;justify-content:center;
   background:linear-gradient(90deg,var(--accent1),var(--accent2));
   color:#fff;text-decoration:none;font-weight:700;
-  font-size:14px;box-shadow:0 6px 18px rgba(0,0,0,0.25);
+  font-size:18px;box-shadow:2 10px 20px rgba(0,0,0,0.25);
   transition:all .3s ease;
 }
 .icon:hover{
