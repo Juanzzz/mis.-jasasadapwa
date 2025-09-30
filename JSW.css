@@ -1,0 +1,95 @@
+:root {
+  --bg:#050505;
+  --text:#f5f6f7;
+  --muted:rgba(255,255,255,0.6);
+  --accent1:#00d4ff;
+  --accent2:#ff2dbb;
+  --container:1100px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body {
+  background-image: url('https://share.google/images/v7FYUA7SInMHzdPcT');
+  background-size: cover;      /* biar nutup seluruh layar */
+  background-position: center; /* posisi gambar di tengah */
+  background-attachment: fixed; /* biar efek parallax (gambar diam saat scroll) */
+  color: #ffffff;
+}
+
+/* Container */
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo { width: 50px; height: auto; }
+.brand-texts h1 { font-size: 20px; }
+.tagline { font-size: 13px; color: var(--muted); }
+
+/* Social */
+.socials { display: flex; gap: 10px; }
+.icon {
+  background: linear-gradient(90deg,var(--accent1),var(--accent2));
+  color: #050505;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Hero */
+.hero {
+  padding: 60px 0;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.hero-title {
+  font-size: 36px;
+  background: linear-gradient(90deg,var(--accent1),var(--accent2));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.hero-sub { color: var(--muted); margin: 14px 0 20px; max-width: 500px; }
+.features { list-style: none; margin: 20px 0; }
+.features li { margin-bottom: 10px; }
+.cta {
+  display: inline-block;
+  background: linear-gradient(90deg,var(--accent1),var(--accent2));
+  color: #050505;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.hero-image { max-width: 100%; border-radius: 12px; }
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 20px;
+  text-align: center;
+  color: var(--muted);
+}
+
+/* Responsive */
+@media (max-width:768px){
+  .hero-grid { grid-template-columns: 1fr; text-align: center; }
+  .hero-right { order: -1; }
+}
+
